@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votaciones</title>
+    <link rel="stylesheet" href="estilo.css">
+    </title>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row">
+            <div class="titulo">
+                <h1>Votacion individual</h1>
+            </div>
+            <form action="funciones/save.php" method="post">
+                <div class="col">
+                    <label for="fullname">Nombre y Apellido</label>
+                    <input type="text" id="fullname" name="fullname" 
+                        placeholder="Ingrese su Nombre y Apellido...">
+                </div>
+                <div class="col">
+                    <label for="alias">Alias</label>
+                    <input type="text" id="alias" name="alias" placeholder="Ingrese su Alias...">
+                </div>
+                <div class="col">
+                    <label for="rut">Rut</label>
+                    <input type="text" id="rut" name="rut" placeholder="Ingrese su Rut...">
+                </div>
+                <div class="col">
+                    <label for="region">Region</label>
+                    <select id="region" name="region">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="comuna">Comuna</label>
+                    <select id="comuna" name="comuna">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="candidato">Candidato</label>
+                    <select id="candidato" name="candidato">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+                <!-- SOLO SE VALIDA POR EL FRONTES JS AJAX -->
+                <div class="col-check">
+                    <label for="marketing">Como se entrero de Nosotrols</label>
+                    <div class="end">
+                        <input checked="true" type="checkbox" value="Web" name="marketing" size="30">Web
+                        <input id="marketing" type="checkbox"  value="TV" name="marketing" size="30">TV
+                        <input id="marketing" type="checkbox"  value="Redes Sociales" name="marketing" size="30">Redes Sociales
+                        <input id="marketing" type="checkbox"  value="Amigos" name="marketing" size="30">Amigos
+                    </div>
+                </div>
+                <div class="titulo">
+                    <input type="submit" class="btn" id="btnIngresar" name="btnIngresar" value="votar">
+                </div>
+            </form>
+        </div>
+    </div>
+<!-- <script src="validation.js"></script> -->
+</body>
+
+</html>
